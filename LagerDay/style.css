@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  /* background-color: #ff8500; */
+  /* background-image: url(imgs/Landing.gif); */
+  background: url('imgs/fondo.png') no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@font-face {
+  font-family: 'aktivgrotesk-bolduploadedfile';
+  src: url('font/aktivgrotesk-bold-webfont.woff2') format('woff2'),
+    url('font/aktivgrotesk-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aktivgrotesk-black';
+  src: url('font/aktiv-grotesk-w01-black-webfont.woff2') format('woff2'),
+    url('font/aktiv-grotesk-w01-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aktivgrotesk-mediuploadedfile';
+  src: url('font/aktivgrotesk-medium-webfont.woff2') format('woff2'),
+    url('font/aktivgrotesk-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+#foam {
+  margin: 0px;
+  margin-bottom: 5%;
+  max-width: 90%;
+  height: auto;
+  margin-top: 22%;
+}
+h2,
+h3 {
+  text-align: center;
+  margin-top: 5% !important;
+  margin-bottom: 2%;
+}
+.first {
+  margin-top: 5% !important;
+}
+p {
+  color: white;
+  text-align: center;
+  font-family: 'aktivgrotesk-mediuploadedfile';
+  margin-bottom: 5%;
+}
+h2 {
+  color: black;
+  font-family: 'aktivgrotesk-black';
+}
+h3 {
+  color: white;
+  font-family: 'aktivgrotesk-black';
+}
+#negrita {
+  font-weight: bolder;
+  color: black;
+  font-family: 'aktivgrotesk-black';
+}
+
+label {
+  color: white;
+  font-size: 1.5625em;
+  font-family: 'aktivgrotesk-mediuploadedfile';
+}
+.form-control {
+  display: inline-block;
+  width: 100%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-color: white;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.btn,
+.btn-primary {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  width: 290px;
+  background-color: white;
+  color: black;
+  border-color: white;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.btn:hover,
+.btn-primary:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+nav ul li a {
+  color: black !important;
+  font-family: 'aktivgrotesk-black';
+  font-size: 1.8em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  padding: 0;
+  margin: 0;
+}
+#navbar {
+  text-align: center;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  color: white;
+}
+footer {
+  margin: 0;
+  background-color: black;
+}
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#submit {
+  margin: 20px;
+}
+/*BREAK POINTS*/
+
+/*MOBILE FIRST*/
+@media (max-width: 768px) {
+  body {
+    background: url('imgs/fondo_mobile.png') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100%;
+    width: 100%;
+  }
+  .navbar-collapse.collapsing .navbar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -25%;
+    transition: all 0.2s ease;
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    position: fixed;
+    top: 5%;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    height: auto;
+    width: 40%;
+    transition: left 0.35s ease;
+    background-color: white;
+    z-index: 1;
+  }
+  .navbar-light {
+    background: white;
+    position: fixed;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  p {
+    font-size: 1.35em;
+  }
+  h2,
+  h3 {
+    font-size: 3em;
+  }
+  .logos {
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  #foam {
+    margin-top: 30%;
+  }
+  nav ul li a {
+    font-size: 1.5em;
+  }
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+  .logos {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  h2,
+  h3 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  nav ul li a {
+    font-size: 1.5em;
+  }
+  .navbar {
+    margin-top: 0.5%;
+  }
+  ul {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul li {
+    width: 20%;
+  }
+}
+/*Large devices*/
+@media (min-width: 992px) {
+  .logos {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    padding: 2%;
+  }
+  h2,
+  h3 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.7em;
+  }
+}
+/*Max size*/
+@media (min-width: 1200px) {
+  .logos {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    padding: 3%;
+  }
+  h2,
+  h3 {
+    font-size: 4.5em;
+  }
+  p {
+    font-size: 1.8em;
+  }
+} /*Max size*/
+@media (min-width: 1400px) {
+  p {
+    font-size: 2em;
+  }
+} /*Max size*/
+@media (min-width: 1920px) {
+  p {
+    font-size: 2.5em;
+  }
+}
